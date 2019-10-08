@@ -1,2 +1,2 @@
-# hystory
+# Hystory
 History till now.
