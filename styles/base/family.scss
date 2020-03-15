@@ -1,0 +1,22 @@
+// Default
+@font-face {
+  font-family: "Nexon Lv1 Gothic";
+  src: url('/static/fonts/NEXON Lv1 Gothic OTF.eot');
+  src: url('/static/fonts/NEXON Lv1 Gothic OTF.eot?#iefix') format('embedded-opentype'), url('/static/fonts/NEXON Lv1 Gothic OTF.woff') format('woff'), url('/static/fonts/NEXON Lv1 Gothic OTF.otf') format('otf'), url('/static/fonts/NEXONLv1GothicRegular.ttf') format('truetype');
+}
+
+// Light
+@font-face {
+  font-family: "Nexon Lv1 Gothic";
+  src: url('/static/fonts/NEXON Lv1 Gothic OTF Light.eot');
+  src: url('/static/fonts/NEXON Lv1 Gothic OTF Light.eot?#iefix') format('embedded-opentype'), url('/static/fonts/NEXON Lv1 Gothic OTF Light.woff') format('woff'), url('/static/fonts/NEXON Lv1 Gothic OTF Light.otf') format('otf'), url('/static/fonts/NEXONLv1GothicLight.ttf') format('truetype');
+  font-weight: 300;
+}
+
+// Bold
+@font-face {
+  font-family: "Nexon Lv1 Gothic";
+  src: url('/static/fonts/NEXON Lv1 Gothic OTF Bold.eot');
+  src: url('/static/fonts/NEXON Lv1 Gothic OTF Bold.eot?#iefix') format('embedded-opentype'), url('/static/fonts/NEXON Lv1 Gothic OTF Bold.woff') format('woff'), url('/static/fonts/NEXON Lv1 Gothic OTF Bold.otf') format('otf'), url('/static/fonts/NEXONLv1GothicBold.ttf') format('truetype');
+  font-weight: 500;
+}

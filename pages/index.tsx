@@ -1,15 +1,28 @@
+import { NextPage, NextPageContext } from 'next'
 import React from 'react'
+import Layout from '../components/Layout'
 
-class Home extends React.Component {
-  static async getInitialProps() {
+interface IProps {
+  message: string
+}
 
+class Home extends React.Component<NextPage & IProps> {
+  static async getInitialProps(context: NextPageContext) {
+    const message = "WELCOME TO HYSTORY"
+    console.log('Message is being passed: ', message)
+
+    return {
+      message
+    }
   }
   
   render() {
+    const { message } = this.props
+
     return (
-      <div>
-        <p>Hello Next.js</p>
-      </div>
+      <Layout>
+        <p>{message}</p>
+      </Layout>
     )
   }
 }
