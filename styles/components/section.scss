@@ -1,0 +1,45 @@
+section {
+  &:first-child {
+    padding-top: 5rem;
+  }
+
+  .section-banner {
+    height: 40rem;
+    position: relative;
+  }
+
+  .section-banner#home {
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        margin-top: 0.6rem;
+        padding-right: 1.6rem;
+        text-align: right;
+        position: relative;
+
+        &:after {
+          content: "";
+          height: 1px;
+          width: 1rem;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background-color: white;
+        }
+      }
+    }
+    
+    img {
+      width: auto;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}

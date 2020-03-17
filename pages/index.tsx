@@ -1,27 +1,33 @@
 import { NextPage, NextPageContext } from 'next'
 import React from 'react'
 import Layout from '../components/Layout'
+import Section from '../components/Section'
 
 interface IProps {
-  message: string
+  
 }
 
 class Home extends React.Component<NextPage & IProps> {
+  // Default getInitialProps
   static async getInitialProps(context: NextPageContext) {
-    const message = "WELCOME TO HYSTORY"
-    console.log('Message is being passed: ', message)
 
     return {
-      message
+
     }
   }
   
   render() {
-    const { message } = this.props
-
     return (
       <Layout>
-        <p>{message}</p>
+        <Section>
+          <div id="home" className="section-banner">
+            <img src="/images/dn-warrior.png" />
+            <div>
+              <h1>Welcome to the hystory</h1>
+              <p>Here is the timeline of my adventures</p>
+            </div>
+          </div>
+        </Section>
       </Layout>
     )
   }
