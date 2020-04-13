@@ -7,7 +7,7 @@ interface ISection {
 class Section extends React.Component<ISection> {
   render() {
     return (
-      <section className="header">
+      <section className="section">
         {this.props.children}
       </section>
     )
