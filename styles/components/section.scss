@@ -1,14 +1,14 @@
 section {
-  &:first-child {
-    padding-top: 5rem;
-  }
+  height: calc(100vh - 2rem);
+  position: relative;
 
   .section-banner {
     height: 40rem;
     position: relative;
   }
 
-  .section-banner#home {
+  #top {
+    padding-top: 5rem;
     display: flex;
     justify-content: space-evenly;
 
@@ -40,6 +40,34 @@ section {
       width: auto;
       height: 100%;
       overflow: hidden;
+    }
+  }
+
+  .timeline {
+    &:after {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 1px);
+      content: '';
+      border-right: 1px solid #4E4E4E;
+    }
+
+    &.start {
+      height: 6rem;
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+  
+      &:after {
+        height: 4rem;
+      }
+  
+      p {
+        text-transform: uppercase;
+      }
     }
   }
 }

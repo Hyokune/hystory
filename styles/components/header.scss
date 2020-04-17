@@ -6,6 +6,7 @@ header {
   padding: 0.6rem 1rem;
   position: fixed;
   background-color: $black-2;
+  z-index: 99;
 
   .header-logo {
     height: 100%;
