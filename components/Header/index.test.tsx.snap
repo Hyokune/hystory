@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component render component without error 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="header-logo"
+  >
+    <Link
+      href="/"
+    >
+      <a>
+        Hystory
+      </a>
+    </Link>
+  </div>
+</header>
+`;

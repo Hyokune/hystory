@@ -10,7 +10,7 @@ class Layout extends React.Component<ILayout> {
   render() {
     return (
       <React.Fragment>
-         <Head>
+        <Head>
           <title>Hystory</title>
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
         </Head>

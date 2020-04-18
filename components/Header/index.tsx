@@ -7,9 +7,7 @@ class Header extends React.Component {
       <header className="header">
         <div className="header-logo">
           <Link href="/">
-            <a>
-              <h1>Hystory</h1>
-            </a>
+            <a>Hystory</a>
           </Link>
         </div>
       </header>

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component render component without error 1`] = `
+<Fragment>
+  <Head>
+    <title>
+      Hystory
+    </title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </Head>
+  <Header />
+  <main>
+    <p>
+      Child element
+    </p>
+  </main>
+</Fragment>
+`;
