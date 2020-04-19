@@ -2,8 +2,15 @@
   padding: 6rem 4rem 2rem;
 
   .history-list-item {
+    margin-top: 4rem;
+    padding: 0 10rem;
     position: relative;
     display: flex;
+    flex-direction: row-reverse;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     &:before {
       content: '';
@@ -19,25 +26,47 @@
       transform: translateX(-6px);
     }
 
-    &:nth-child(odd) {
-      flex-direction: row-reverse;
+    &:nth-child(even) {
+      flex-direction: row;
+
+      .info-box {
+        align-items: flex-end;
+
+        .info-date {
+          &:before {
+            border-left: 1px solid #4E4E4E;
+            border-right: 1px solid #1F202D;
+
+            top: 3px;
+            left: 50%;
+            transform: translateX(-46px);
+          }
+        }
+      }
+
+      .description-box {
+        align-items: flex-start;
+      }
     }
 
     .info-box, .description-box {
       width: 50%;
       padding: 0 4rem;
+      display: flex;
     }
 
     .info-box {
+      align-items: flex-start;
+      flex-direction: column;
+
       img {
-        height: 16rem;
-        width: auto;
-        object-fit: cover;
-        margin-top: 2rem;
+        width: 32rem;
+        margin-top: 1rem;
       }
 
       .info-date {
         font-size: 0.8rem;
+        font-weight: 500;
 
         &:before {
           content: '';
@@ -45,7 +74,7 @@
           width: 40px;
           position: absolute;
           border: 1px solid #4E4E4E;
-          border-left: none;
+          border-left: 1px solid #1F202D;
           top: 3px;
           left: calc(50% + 4px);
         }
@@ -54,6 +83,7 @@
       .info-title {
         font-size: 1.8rem;
         margin-top: 1.2rem;
+        font-weight: 600;
         text-transform: uppercase;
       }
 
@@ -67,6 +97,33 @@
         font-size: 0.8rem;
         margin-top: 1.4rem;
         color: rgb(199, 199, 199);
+      }
+    }
+
+    .description-box {
+      margin-top: 2rem;
+      align-items: flex-end;
+      flex-direction: column;
+      
+      p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+
+        & + p {
+          margin-top: 0.6rem;
+        }
+
+        span {
+          &#battle-mage {
+            color: #6AE5FD;
+            text-shadow: 1px 1px white;
+          }
+
+          &#dawn-warrior {
+            color: #FFDD00;
+            text-shadow: 1px 1px white;
+          }
+        }
       }
     }
   }

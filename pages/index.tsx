@@ -16,7 +16,7 @@ class Home extends React.Component<NextPage> {
   render() {
     return (
       <Layout>
-        <Section>
+        <Section fullHeight>
           <div id="top" className="section-banner">
             <img className="fade-in-left" src="/images/dn-warrior.png" />
             <div className="fade-in-right">

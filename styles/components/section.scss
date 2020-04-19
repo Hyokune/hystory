@@ -1,6 +1,9 @@
 section {
-  height: calc(100vh - 2rem);
   position: relative;
+
+  &.full-height {
+    height: calc(100vh - 2rem);
+  }
 
   .section-banner {
     height: 40rem;
