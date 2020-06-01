@@ -13,17 +13,51 @@ section {
   #top {
     padding-top: 5rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
-    div {
+    > div {
+      
+      padding-left: 12rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
+      &.fade-in-right {
+        padding-left: 0rem;
+        padding-right: 12rem;
+
+        h1 {
+          text-align: right;
+        }
+
+        p {
+          padding-left: 0;
+          padding-right: 1.6rem;
+          text-align: right;
+
+          &:after {
+            left: auto;
+            right: 0;
+            background-color: white;
+          }
+        }
+      }
+
+      &.center {
+        width: 50%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      h1 {
+        text-align: left;
+      }
+
       p {
+        width: auto;
         margin-top: 0.6rem;
-        padding-right: 1.6rem;
-        text-align: right;
+        padding-left: 1.6rem;
+        text-align: left;
         position: relative;
 
         &:after {
@@ -32,7 +66,7 @@ section {
           width: 1rem;
           position: absolute;
           top: 50%;
-          right: 0;
+          left: 0;
           transform: translateY(-50%);
           background-color: white;
         }
@@ -42,6 +76,7 @@ section {
     img {
       width: auto;
       height: 100%;
+      margin: auto;
       overflow: hidden;
     }
   }
