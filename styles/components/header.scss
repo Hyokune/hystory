@@ -5,8 +5,71 @@ header {
   width: 100%;
   padding: 0.6rem 1rem;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $black-2;
   z-index: 99;
+
+  a.header-item {
+    padding: 0 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    line-height: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+
+    &:first-child {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0.6rem;
+        width: 20px;
+        height: 0px;
+        border: 1px solid transparent;
+        transform: translateY(-50%);
+        transition: border-color 0.2s ease;
+      }
+
+      &:hover {
+        transform: translateX(-2rem);
+
+        &:after {
+          border-color: white;
+        }
+      }
+    }
+
+    &:last-child {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0.1rem;
+        width: 20px;
+        height: 0px;
+        border: 1px solid transparent;
+        transform: translateY(-50%);
+        transition: border-color 0.2s ease;
+      }
+
+      &:hover {
+        transform: translateX(2rem);
+
+        &:after {
+          border-color: white;
+        }
+      }
+    }
+  }
 
   .header-logo {
     height: 100%;
@@ -21,6 +84,7 @@ header {
     }
 
     a {
+      padding: 0;
       text-decoration: none;
       font-weight: 500;
       font-size: 1.4rem;
