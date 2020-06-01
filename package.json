@@ -16,25 +16,25 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
-    "next": "^9.3.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "sass": "^1.26.3"
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.10.2",
     "@types/classnames": "^2.2.10",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^25.2.1",
-    "@types/node": "^12.12.30",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^12.12.42",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.4",
-    "jest": "^25.3.0",
-    "ts-jest": "^25.4.0",
-    "typescript": "^3.8.3"
+    "enzyme-to-json": "^3.5.0",
+    "jest": "^25.5.4",
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.9.3"
   }
 }
