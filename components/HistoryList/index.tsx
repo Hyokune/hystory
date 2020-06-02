@@ -7,10 +7,10 @@ class HistoryList extends React.Component {
         <li className="history-list-item">
           <div className="info-box">
             <p className="info-date">2007 | 2008</p>
-            <h2 className="info-title">Defence of the Ancients</h2>
+            <h2 className="info-title">Defense of the Ancients</h2>
             <p className="info-subtitle">Eul | Icefrog</p>
             <p className="info-blurb">The birth of <span className="bold">TRUE MOBA</span> from a Warcraft III custom map</p>
-            <img src="/images/timeline/dota-allstars.png" />
+            <img src="/images/timeline/dota-allstars.png" alt="Defense of the Ancients" />
           </div>
           <div className="description-box">
             <p>One of the most popular custom maps in Warcraft III: Reign of Chaos is DotA (Defense of the Ancients).</p>
@@ -31,7 +31,7 @@ class HistoryList extends React.Component {
             <h2 className="info-title">Maplestory</h2>
             <p className="info-subtitle">Nexon | Wizet</p>
             <p className="info-blurb">Free-to-play 2D side-scrolling MMORPG</p>
-            <img src="/images/timeline/maplestory.png" />
+            <img src="/images/timeline/maplestory.png" alt="Maplestory" />
           </div>
           <div className="description-box">
             <p>Maplestory is probably a game that doesn't really need an explanation or review as it's a game that most people would have tried at least once during their childhood.</p>
@@ -49,7 +49,7 @@ class HistoryList extends React.Component {
             <h2 className="info-title">StarCraft: Brood War</h2>
             <p className="info-subtitle">Blizzard</p>
             <p className="info-blurb">The father of real-time strategy, the video game that revolutionised the RTS genre</p>
-            <img src="/images/timeline/starcraft.png" />
+            <img src="/images/timeline/starcraft.png" alt="Starcraft" />
           </div>
           <div className="description-box">
             <p>Starcraft was one of the very first games I have ever played as a kid.</p>
