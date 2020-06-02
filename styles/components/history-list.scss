@@ -43,10 +43,6 @@
           }
         }
       }
-
-      .description-box {
-        align-items: flex-start;
-      }
     }
 
     .info-box, .description-box {
@@ -97,12 +93,16 @@
         font-size: 0.8rem;
         margin-top: 1.4rem;
         color: rgb(199, 199, 199);
+
+        span.bold {
+          color: rgb(199, 199, 199);
+          font-weight: bold;
+        }
       }
     }
 
     .description-box {
       margin-top: 2rem;
-      align-items: flex-end;
       flex-direction: column;
       
       p {
@@ -122,6 +122,10 @@
           &#dawn-warrior {
             color: #FFDD00;
             text-shadow: 1px 1px white;
+          }
+
+          &.bold {
+            font-weight: bold;
           }
         }
       }

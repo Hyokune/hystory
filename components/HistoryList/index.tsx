@@ -6,24 +6,30 @@ class HistoryList extends React.Component {
       <ul id="history-list">
         <li className="history-list-item">
           <div className="info-box">
-            <p className="info-date">200?</p>
-            <h2 className="info-title">Game name</h2>
-            <p className="info-subtitle">Developer | Publisher</p>
-            <p className="info-blurb">Short blurb</p>
-            <img src="/images/timeline/maplestory.png" />
+            <p className="info-date">2007 | 2008</p>
+            <h2 className="info-title">Defence of the Ancients</h2>
+            <p className="info-subtitle">Eul | Icefrog</p>
+            <p className="info-blurb">The birth of <span className="bold">TRUE MOBA</span> from a Warcraft III custom map</p>
+            <img src="/images/timeline/dota-allstars.png" />
           </div>
           <div className="description-box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>One of the most popular custom maps in Warcraft III: Reign of Chaos is DotA (Defense of the Ancients).</p>
+            <p>Although there were a lot of custom maps where you play as one hero, they were never as fun as a game of DotA with your friends.</p>
+            <p>Back then, I never really "explored" the game enough to understand how it worked and how complicated it was. I guess I just never bothered to read.</p>
+            <p>
+              As time passed, a small community of OCE players showed up in Garena and decided to play online. 
+              Of course I never really won and it may sound like an excuse, but the servers weren't that stable so a lot of the players would disconnect in the middle of the game without being able to reconnect.
+            </p>
+            <p>To briefly explain how complex that game was, the amount of possibilities with different hero and item combinations were limitless, which meant that any player could learn something just from playing a game.</p>
+            <p>Unlike the current games these days where you have a <span className="bold">META</span> that diminishes the majority of options the players/teams can make, the game can only be said as endless possibilities.</p>
+            <p>In the end of the game's life, there were 110 heroes available to play and amongst all, Earthshaker - Raigor Stonehoof was my pick.</p>
           </div>
         </li>
         <li className="history-list-item">
           <div className="info-box">
             <p className="info-date">2005 | 2006</p>
             <h2 className="info-title">Maplestory</h2>
-            <p className="info-subtitle">Nexon, Wizet</p>
+            <p className="info-subtitle">Nexon | Wizet</p>
             <p className="info-blurb">Free-to-play 2D side-scrolling MMORPG</p>
             <img src="/images/timeline/maplestory.png" />
           </div>
