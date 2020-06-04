@@ -1,3 +1,5 @@
+@use 'base/colors';
+
 header {
   top: 0;
   left: 0;
@@ -8,7 +10,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $black-2;
+  background-color: colors.$black-2;
   z-index: 99;
 
   a.header-item {

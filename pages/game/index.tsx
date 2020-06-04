@@ -1,23 +1,20 @@
 import { NextPage } from 'next'
 import React from 'react'
+import Banner from '../../components/Banner'
 import HistoryList from '../../components/HistoryList'
 import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 
-class Home extends React.Component<NextPage> {
+class GamePage extends React.Component<NextPage> {
   render() {
     return (
       <Layout>
-        <Section fullHeight>
-          <div id="top" className="section-banner">
-            <div className="center fade-in-left">
-              <img src="/images/dn-warrior.png" alt="Dragon Nest Warrior" />
-            </div>
-            <div className="fade-in-right">
-              <h1>Game hystory</h1>
-              <p>Timeline and review of the adventures till now</p>
-            </div>
-          </div>
+        <Section>
+          <Banner
+            description="Timeline and review of the adventures till now"
+            image={{ src: '/images/dn-warrior.png', alt: 'Dragon Nest Warrior' }}
+            title="Game hystory"
+          />
           <div className="timeline start">
             <p>Start timeline</p>
           </div>
@@ -31,4 +28,4 @@ class Home extends React.Component<NextPage> {
   }
 }
 
-export default Home
+export default GamePage

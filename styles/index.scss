@@ -1,10 +1,11 @@
-@import 'base/colors';
-@import 'base/family';
-@import 'base/main';
+@use 'base/colors';
+@use 'base/family';
+@use 'base/main';
 
-@import 'helpers/keyframes';
+@use 'helpers/keyframes';
 
-@import 'components/header';
-@import 'components/history-list';
-@import 'components/layout';
-@import 'components/section';
+@use 'components/header';
+@use 'components/history-list';
+@use 'components/layout';
+@use 'components/section';
+@use 'components/banner';

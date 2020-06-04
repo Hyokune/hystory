@@ -1,22 +1,20 @@
 import { NextPage } from 'next'
 import React from 'react'
+import Banner from '../../components/Banner'
 import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 
-class Home extends React.Component<NextPage> {
+class DevPage extends React.Component<NextPage> {
   render() {
     return (
       <Layout>
-        <Section fullHeight>
-          <div id="top" className="section-banner">
-            <div className="fade-in-left">
-              <h1>Dev blog</h1>
-              <p>A dungeon where I leave my logs for others to explore</p>
-            </div>
-            <div className="center fade-in-right">
-              <img src="/images/lance.png" alt="Lance" />
-            </div>
-          </div>
+        <Section>
+          <Banner
+            description="A dungeon where I leave my logs for others to explore"
+            image={{ src: '/images/lance.png', alt: 'Lance' }}
+            reverse={true}
+            title="Dev blog"
+          />
           <div className="timeline start">
             <p>Start timeline</p>
           </div>
@@ -26,4 +24,4 @@ class Home extends React.Component<NextPage> {
   }
 }
 
-export default Home
+export default DevPage

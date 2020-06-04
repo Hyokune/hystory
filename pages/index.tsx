@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import React from 'react'
+import Banner from '../components/Banner'
 import HistoryList from '../components/HistoryList'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
@@ -16,14 +17,13 @@ class Home extends React.Component<NextPage> {
   render() {
     return (
       <Layout>
-        <Section fullHeight>
-          <div id="top" className="section-banner">
-            <img className="fade-in-left" src="/images/dn-warrior.png" />
-            <div className="fade-in-right">
-              <h1>Welcome to the hystory</h1>
-              <p>Here is the timeline of my adventures</p>
-            </div>
-          </div>
+        <Section>
+          <Banner
+            description="A dungeon where I leave my logs for others to explore"
+            image={{ src: '/images/lance.png', alt: 'Lance' }}
+            reverse={true}
+            title="Dev blog"
+          />
           <div className="timeline start">
             <p>Start timeline</p>
           </div>

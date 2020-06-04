@@ -1,9 +1,11 @@
+@use 'base/colors';
+
 body * {
   font-family: 'Nexon Lv1 Gothic', sans-serif;
   color: white;
 
   main {
-    background-color: $black-1;
+    background-color: colors.$black-1;
 
     h1 {
       font-size: 3rem;
