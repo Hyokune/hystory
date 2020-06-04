@@ -27,7 +27,7 @@
       @media screen and (min-width: breakpoints.$tablet-lg) {
         right: auto;
         left: 2rem;
-        box-shadow: 40px -0 40px 0px rgba(colors.$black-1, .9);
+        box-shadow: 35px 0 20px 0px rgba(colors.$black-1, .9);
       }
 
       h1 {
@@ -70,7 +70,6 @@
       min-width: 30rem;
       max-width: 30rem;
       height: auto;
-      object-fit: cover;
       display: block;
       position: relative;
       overflow: hidden;
@@ -89,7 +88,7 @@
     padding: 0 1rem 10rem;
     text-align: center;
     background-color: rgba(colors.$black-1, .9);
-    box-shadow: 1px -40px 50px 0px rgba(colors.$black-1, .9);
+    box-shadow: 0px -35px 20px 0px rgba(colors.$black-1, .9);
 
     @media screen and (min-width: breakpoints.$tablet-lg) {
       width: auto;
@@ -102,7 +101,7 @@
       justify-content: center;
       position: absolute;
       background-color: rgba(colors.$black-1, .9);
-      box-shadow: -40px -0 40px 0px rgba(colors.$black-1, .9);
+      box-shadow: -35px 0 20px 0px rgba(colors.$black-1, .9);
     }
 
     @media screen and (min-width: breakpoints.$desktop-lg) {

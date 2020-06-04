@@ -19,10 +19,9 @@ class Home extends React.Component<NextPage> {
       <Layout>
         <Section>
           <Banner
-            description="A dungeon where I leave my logs for others to explore"
-            image={{ src: '/images/lance.png', alt: 'Lance' }}
-            reverse={true}
-            title="Dev blog"
+            description="Timeline and review of the adventures till now"
+            image={{ src: '/images/dn-warrior.png', alt: 'Dragon Nest Warrior' }}
+            title="Game hystory"
           />
           <div className="timeline start">
             <p>Start timeline</p>
