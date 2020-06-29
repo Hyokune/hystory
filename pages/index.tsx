@@ -20,7 +20,7 @@ class Home extends React.Component<NextPage> {
         <Section>
           <Banner
             description="Timeline and review of the adventures till now"
-            image={{ src: '/images/dn-warrior.png', alt: 'Dragon Nest Warrior' }}
+            image={{ src: '/images/lance-sword.png', alt: 'Lance With Sword' }}
             title="Game hystory"
           />
           <div className="timeline start">
