@@ -1,12 +1,22 @@
+@use 'base/breakpoints';
+@use 'base/colors';
+
 #history-list {
-  padding: 6rem 4rem 2rem;
+  padding: 6rem 0rem 2rem;
 
   .history-list-item {
-    margin-top: 4rem;
-    padding: 0 10rem;
+    margin: 4rem auto 0;
+    padding: 3rem 0;
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    background-color: colors.$black-1;
+
+    @media screen and (min-width: breakpoints.$tablet-lg) {
+      padding: 0;
+      flex-direction: row-reverse;
+      background-color: transparent;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -16,21 +26,27 @@
       content: '';
       display: block;
       position: absolute;
-      top: -1px;
+      top: 0;
       left: 50%;
       width: 9px;
       height: 9px;
       border: 1px solid #4E4E4E;
       border-radius: 5px;
       background: #1F202D;
-      transform: translateX(-6px);
+      transform: translateX(-5px);
     }
 
     &:nth-child(even) {
-      flex-direction: row;
+      @media screen and (min-width: breakpoints.$tablet-lg) {
+        flex-direction: row;
+      }
 
       .info-box {
         align-items: flex-end;
+
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          padding-left: 0;
+        }
 
         .info-date {
           &:before {
@@ -43,36 +59,67 @@
           }
         }
       }
+      
+      .description-box {
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      .info-box {
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          padding-right: 0;
+        }
+      }
+      
+      .description-box {
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          padding-left: 0;
+        }
+      }
     }
 
     .info-box, .description-box {
-      width: 50%;
-      padding: 0 4rem;
+      width: 100%;
+      padding: 0 2rem;
       display: flex;
+
+      @media screen and (min-width: breakpoints.$tablet-lg) {
+        width: 50%;
+        padding: 0 4rem;
+      }
     }
 
     .info-box {
       align-items: flex-start;
       flex-direction: column;
 
-      img {
-        width: 32rem;
+      .info-image {
         margin-top: 1rem;
+        max-width: 40rem;
+
+        img {
+          width: 100%;
+        }
       }
 
       .info-date {
         font-size: 0.8rem;
         font-weight: 500;
 
-        &:before {
-          content: '';
-          height: 1px;
-          width: 40px;
-          position: absolute;
-          border: 1px solid #4E4E4E;
-          border-left: 1px solid #1F202D;
-          top: 3px;
-          left: calc(50% + 4px);
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          &:before {
+            content: '';
+            height: 3px;
+            width: 40px;
+            position: absolute;
+            border: 1px solid #4E4E4E;
+            border-left: 1px solid #1F202D;
+            top: 3px;
+            left: calc(50% + 4px);
+          }
         }
       }
 
@@ -90,9 +137,15 @@
       }
 
       .info-blurb {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        line-height: 1rem;
         margin-top: 1.4rem;
         color: rgb(199, 199, 199);
+
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+        }
 
         span.bold {
           color: rgb(199, 199, 199);
@@ -101,13 +154,22 @@
       }
     }
 
-    .description-box {
-      margin-top: 2rem;
+    .description-box { 
+      margin-top: 1rem;
       flex-direction: column;
+
+      @media screen and (min-width: breakpoints.$tablet-lg) {
+        margin-top: 2rem;
+      }
       
       p {
-        font-size: 0.8rem;
-        line-height: 1.2rem;
+        font-size: 0.7rem;
+        line-height: 1.1rem;
+
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+        }
 
         & + p {
           margin-top: 0.6rem;

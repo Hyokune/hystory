@@ -4,6 +4,18 @@ body * {
   font-family: 'Nexon Lv1 Gothic', sans-serif;
   color: white;
 
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:after, &:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
   main {
     background-color: colors.$black-1;
 
