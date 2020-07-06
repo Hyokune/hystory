@@ -48,21 +48,32 @@
           padding-left: 0;
         }
 
+        @media screen and (min-width: breakpoints.$desktop-wide) {
+          padding-left: 8rem;
+        }
+
         .info-date {
           &:before {
-            border-left: 1px solid #4E4E4E;
-            border-right: 1px solid #1F202D;
-
             top: 3px;
             left: 50%;
+            border-left: 1px solid #4E4E4E;
+            border-right: 1px solid #1F202D;
             transform: translateX(-46px);
           }
+        }
+
+        .info-title, .info-blurb {
+          text-align: right;
         }
       }
       
       .description-box {
         @media screen and (min-width: breakpoints.$tablet-lg) {
           padding-right: 0;
+        }
+
+        @media screen and (min-width: breakpoints.$desktop-wide) {
+          padding-right: 8rem;
         }
       }
     }
@@ -72,19 +83,31 @@
         @media screen and (min-width: breakpoints.$tablet-lg) {
           padding-right: 0;
         }
+
+        @media screen and (min-width: breakpoints.$desktop-wide) {
+          padding-right: 8rem;
+        }
       }
       
       .description-box {
         @media screen and (min-width: breakpoints.$tablet-lg) {
           padding-left: 0;
         }
+
+        @media screen and (min-width: breakpoints.$desktop-wide) {
+          padding-left: 8rem;
+        }
       }
     }
 
     .info-box, .description-box {
       width: 100%;
-      padding: 0 2rem;
+      padding: 0 1.4rem;
       display: flex;
+
+      @media screen and (min-width: breakpoints.$phone) {
+        padding: 0 4rem;
+      }
 
       @media screen and (min-width: breakpoints.$tablet-lg) {
         width: 50%;
@@ -124,10 +147,21 @@
       }
 
       .info-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
         margin-top: 1.2rem;
         font-weight: 600;
         text-transform: uppercase;
+
+        @media screen and (min-width: breakpoints.$tablet-lg) {
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+        }
+
+        @media screen and (min-width: breakpoints.$desktop-lg) {
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
       }
 
       .info-subtitle {
@@ -176,18 +210,36 @@
         }
 
         span {
+          &#blitzcrank {
+            color: #d6bf2b;
+          }
+
+          &#thresh {
+            color: #4dd18d;
+          }
+
+          &#earthshaker {
+            color: #977a55;
+          }
+
           &#battle-mage {
-            color: #6AE5FD;
-            text-shadow: 1px 1px white;
+            color: #fb7272;
           }
 
           &#dawn-warrior {
-            color: #FFDD00;
-            text-shadow: 1px 1px white;
+            color: #fde440;
+          }
+
+          &#terran {
+            color: #6b97e2;
           }
 
           &.bold {
             font-weight: bold;
+          }
+
+          &.shadow {
+            text-shadow: 1px 1px white;
           }
         }
       }

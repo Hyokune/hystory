@@ -17,7 +17,7 @@ describe('HistoryList component', () => {
     expect(historyList.exists()).toBe(true)
 
     const historyListItems = historyList.find('li.history-list-item')
-    expect(historyListItems.length).toEqual(3)
+    expect(historyListItems.length).toEqual(5)
 
     historyListItems.forEach((item, index) => {
       const infoBox = item.find('div.info-box')
