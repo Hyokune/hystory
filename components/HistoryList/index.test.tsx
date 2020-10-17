@@ -13,33 +13,19 @@ describe('HistoryList component', () => {
   })
 
   test('render component without error', () => {
-    const historyList = wrapper.find('ul#history-list')
+    const historyList = wrapper.find('ul.history-list')
     expect(historyList.exists()).toBe(true)
 
-    const historyListItems = historyList.find('li.history-list-item')
+    const historyListItems = historyList.find('HistoryListItem')
     expect(historyListItems.length).toEqual(5)
 
-    historyListItems.forEach((item, index) => {
-      const infoBox = item.find('div.info-box')
-      expect(infoBox.exists()).toBe(true)
-
-      const infoDate = infoBox.find('p.info-date')
-      expect(infoBox.exists()).toBe(true)
-
-      const infoTitle = infoBox.find('h2.info-title')
-      expect(infoTitle.exists()).toBe(true)
-
-      const infoSubtitle = infoBox.find('p.info-subtitle')
-      expect(infoSubtitle.exists()).toBe(true)
-
-      const infoImage = infoBox.find('img')
-      expect(infoImage.exists()).toBe(true)
-
-      const infoBlurb = infoBox.find('p.info-blurb')
-      expect(infoBlurb.exists()).toBe(true)
-
-      const descriptionBox = item.find('div.description-box')
-      expect(descriptionBox.exists()).toBe(true)
+    historyListItems.forEach((item) => {
+      expect(item.prop('date')).toBeTruthy()
+      expect(item.prop('title')).toBeTruthy()
+      expect(item.prop('subtitle')).toBeTruthy()
+      expect(item.prop('blurb')).toBeTruthy()
+      expect(item.prop('img')).toBeTruthy()
+      expect(item.prop('children')).toBeTruthy()
     })
   })
 })

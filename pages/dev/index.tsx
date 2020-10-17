@@ -12,7 +12,7 @@ class DevPage extends React.Component<NextPage> {
           <Banner
             description="A dungeon where I leave my logs for others to explore"
             image={{ src: '/images/lance.png', alt: 'Lance' }}
-            reverse={true}
+            reverse
             title="Dev blog"
           />
           <div className="timeline start">
