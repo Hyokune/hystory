@@ -1,0 +1,12 @@
+@use 'base/breakpoints';
+@use 'base/colors';
+
+.glowing-spinner {
+  stroke: rgba(white, 1);
+  fill: none;
+  z-index: 1;
+
+  .glow path {
+    stroke: rgba(rgb(46, 154, 255), 1);
+  }
+}

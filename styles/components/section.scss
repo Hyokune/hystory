@@ -26,6 +26,7 @@ section {
       position: absolute;
       display: flex;
       justify-content: center;
+      z-index: 10;
   
       &:after {
         height: 4rem;
