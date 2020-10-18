@@ -3,20 +3,14 @@ import React from 'react'
 import Banner from '../components/Banner'
 import HistoryList from '../components/HistoryList'
 import Layout from '../components/Layout'
+import RisingParticles from '../components/RisingParticles'
 import Section from '../components/Section'
 
-class Home extends React.Component<NextPage> {
-  // Default getInitialProps
-  // static async getInitialProps(context: NextPageContext) {
-
-  //   return {
-
-  //   }
-  // }
-  
+class HomePage extends React.Component<NextPage> {
   render() {
     return (
       <Layout>
+        <RisingParticles />
         <Section>
           <Banner
             description="Timeline and review of the adventures till now"
@@ -36,4 +30,4 @@ class Home extends React.Component<NextPage> {
   }
 }
 
-export default Home
+export default HomePage

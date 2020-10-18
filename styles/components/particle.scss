@@ -1,0 +1,88 @@
+.particle-wrapper {
+  bottom: 0;
+  $particleColor: hsl(180, 100%, 80%);
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+  $particleCount: 100;
+  $particleBaseSize: 10;
+
+  @for $particleIndex from 1 through $particleCount {
+    &:nth-child(#{$particleIndex}) {
+      $circleSize: random($particleBaseSize);
+      width: $circleSize + px;
+      height: $circleSize + px;
+
+      $startPositionY: random(10) + 100;
+      $framesName: "elevate-" + $particleIndex;
+      $moveDuration: 40000 + random(9000) + ms;
+
+      animation-name: #{$framesName};
+      animation-duration: $moveDuration;
+      animation-delay: random(37000) + ms;
+
+      @keyframes #{$framesName} {
+        from {
+          transform: translate3d(#{random(100) + vw}, #{$startPositionY + vh}, 0);
+        }
+
+        to {
+          transform: translate3d(#{random(100) + vw}, #{-$startPositionY - random(30) + vh}, 0);
+        }
+      }
+      
+      .particle {
+        animation-delay: random(4000) + ms;
+      }
+    }
+  }
+
+  .particle {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    mix-blend-mode: screen;
+    background-image: radial-gradient(
+      rgba(white, 1),
+      rgba(rgb(46, 154, 255), 0.7) 10%,
+      rgba(rgb(46, 154, 255), 0) 45%
+    );
+    animation: fade-frames .2s infinite,
+               scale-frames 2s infinite;
+
+    @keyframes fade-frames {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes scale-frames {
+      0% {
+        transform: scale3d(.3, .3, .3);
+      }
+
+      50% {
+        transform: scale3d(2.2, 2.2, 2.2);
+      }
+
+      100% {
+        transform: scale3d(.3, .3, .3);
+      }
+    }
+  }
+}

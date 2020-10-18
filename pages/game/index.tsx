@@ -3,12 +3,14 @@ import React from 'react'
 import Banner from '../../components/Banner'
 import HistoryList from '../../components/HistoryList'
 import Layout from '../../components/Layout'
+import RisingParticles from '../../components/RisingParticles'
 import Section from '../../components/Section'
 
 class GamePage extends React.Component<NextPage> {
   render() {
     return (
       <Layout>
+        <RisingParticles />
         <Section>
           <Banner
             description="Timeline and review of the adventures till now"

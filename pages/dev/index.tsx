@@ -16,7 +16,7 @@ class DevPage extends React.Component<NextPage> {
             title="Dev blog"
           />
           <div className="timeline start">
-            <p>Start timeline</p>
+            <p>THIS SECTION IS UNDER DEVELOPMENT :(</p>
           </div>
         </Section>
       </Layout>

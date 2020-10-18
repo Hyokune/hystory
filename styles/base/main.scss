@@ -17,6 +17,10 @@ body * {
   }
 
   main {
+    width: 100%;
+    padding-top: 3rem; 
+    display: block;
+    position: relative;
     background-color: colors.$black-1;
 
     h1 {
