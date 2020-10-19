@@ -9,10 +9,56 @@ class HistoryList extends React.Component {
           date="2012"
           title="Dragon Nest"
           subtitle="Eyedentity Games"
-          blurb="GOD GAME"
+          blurb="World's fastest action MMORPG, but also the best"
           img={{ src: '/images/timeline/dragon-nest.png', alt: 'Dragon Nest' }}
         >
-          <p>[INSERT TEXT HERE]</p>
+          <p>After years of playing MOBAs, it was time to get back into a MMORPG however the Maplestory era was over, at least for me.</p>
+          <p>
+            A big portion of my time was spent researching MMORPGs (including the non-popular ones) to find out what combat style the game had, the leveling system, graphics including the fluidity of the animations, 
+            and mechanics such as partying and guilds.
+          </p>
+          <p>
+            During this period, my motivation of playing MMORPGs were heavily influenced by the anime, Sword Art Online, and out of all the games that were on the list, Dragon Nest was the game that 
+            satisfied most of my conditions. There were a few honorable mentions such as Tera and Guild Wars 2, however the combat system of those games were just too slow and bland.
+          </p>
+          <p>
+            Additionally, Dragon Nest's skill to skill transition fludity was smooth enough to think that they meant to be used as combos, 
+            whereas the majority of MMORPGs skill to skill transition fluidity were very rigid and the players would experience a small pause between each skill.
+            This made the PVP system incredibly enjoyable regardless of whether it was single PVP or group PVP.
+          </p>
+          <p>The early phases of the game was a completely new experience. Leveling/grinding, gearing and doing quests was generally simple and could be accomplished by following the main questline.</p>
+          <p>
+            The learning curve was comparatively better/easier than playing with an experienced player due to the fact that the party system was able to "cap" your level within a day, 
+            however once you knew the game, it was definitely better to level up an alternative character using the party system.
+          </p>
+          <p>
+            Like many RPGs, the combat system included invincibility frames (I-frames) in the base tumble/dodge skill for every class, 
+            but Dragon Nest also included i-frames within skills for a few classes which allowed players to damage monsters while the monster is attacking if timed correctly.
+          </p>
+          <p>
+            As cliche as it may sound, I joined a decent guild which helped me progress further through the game such as nests (4 man) and raids (6 ~ 8 man).
+            Just like in any community, conflict within the guild was inevitable. 
+            Connections were cut and friendships were broken but at the end of the day, there were many memorable moments we shared.
+          </p>
+          <p>
+            After a short hiatus, I was able to join another guild with the help of a friend from the previous guild. 
+            This guild was more like a family than just some online friends from a game. I still treasure these people yet to this day and will not forget the great time we had.
+          </p>
+          <p>
+            The raids of this game were always such a mission, due to the difficulty compared to the level cap and the number of mechanics and skills that had to be memorised. 
+            Each raid consisted of 5-6 mini bosses and 1 final boss. Few bosses had a mechanic where if 1 member didn't do it correctly, it would wipe out the whole party. 
+          </p>
+          <p>
+            On the other hand, clearing the raids dropped top tier equipments for a random class which then would be given to the players of that class, 
+            or if the class wasn't in the party, the equipment would get sold and the gold would be evenly distributed to each member.
+          </p>
+          <p>
+            Although the game slowly died due to the greediness of the game developer/publisher, 
+            Dragon Nest is still considered my favourite game of all time and would play again if I could go back in time.
+          </p>
+          <p>
+            Forgot to mention, I only played the <span className="shadow" style={{ color: '#ED4A4A' }}>Swordsman</span> specialisation of the <span className="shadow" style={{ color: '#ED4A4A' }}>Warrior</span> class.
+          </p>
         </HistoryListItem>
         <HistoryListItem
           date="2010"
