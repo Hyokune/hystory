@@ -45,9 +45,8 @@ describe('HistoryList component', () => {
     const blurb = historyListItem.find('p.item-blurb')
     expect(blurb.text()).toEqual(defaultProps.blurb)
 
-    const image = historyListItem.find('img')
+    const image = historyListItem.find('Image')
     expect(image.props().src).toEqual(defaultProps.img.src)
-    expect(image.prop('fallback')).toEqual(defaultProps.img.fallback)
     expect(image.props().alt).toEqual(defaultProps.img.alt)
 
     const itemBody = historyListItem.find('div.item-body')

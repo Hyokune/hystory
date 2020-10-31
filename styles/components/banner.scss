@@ -41,7 +41,6 @@
         @media screen and (min-width: breakpoints.$tablet-lg) {
           padding-left: 1.6rem;
           padding-right: 0;
-          font-size: .8rem;
           text-align: left;
         }
 
@@ -142,14 +141,6 @@
         padding-right: 1.6rem;
         font-size: .8rem;
         text-align: right;
-      }
-
-      @media screen and (min-width: breakpoints.$desktop) {
-        font-size: .9rem;
-      }
-
-      @media screen and (min-width: breakpoints.$desktop-lg) {
-        font-size: 1rem;
       }
 
       &:after {

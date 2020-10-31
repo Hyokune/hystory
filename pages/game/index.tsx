@@ -1,10 +1,10 @@
+import Banner from 'components/Banner'
+import HistoryList from 'components/HistoryList'
+import Layout from 'components/Layout'
+import RisingParticles from 'components/RisingParticles'
+import Section from 'components/Section'
 import { NextPage } from 'next'
 import React from 'react'
-import Banner from '../../components/Banner'
-import HistoryList from '../../components/HistoryList'
-import Layout from '../../components/Layout'
-import RisingParticles from '../../components/RisingParticles'
-import Section from '../../components/Section'
 
 class GamePage extends React.Component<NextPage> {
   render() {
@@ -14,7 +14,7 @@ class GamePage extends React.Component<NextPage> {
         <Section>
           <Banner
             description="Timeline and review of the adventures till now"
-            image={{ src: '/images/lance-sword.png', alt: 'Lance With Sword' }}
+            image={{ src: '/images/lance-sword.png', alt: 'Lance with sword drawing by Arucelli' }}
             title="Game hystory"
           />
           <div className="timeline start">

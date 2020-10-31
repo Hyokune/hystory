@@ -1,6 +1,6 @@
-import React from 'react'
 import App, { AppProps } from 'next/app'
-import '../styles/index.scss'
+import React from 'react'
+import 'styles/index.scss'
 
 class Application extends App<AppProps> {
   render() {

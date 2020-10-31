@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export interface Props {
@@ -7,7 +8,6 @@ export interface Props {
   blurb?: string | JSX.Element,
   img: {
     src: string,
-    fallback?: string,
     alt: string
   },
   children?: React.ReactNode
@@ -21,7 +21,7 @@ const HistoryListItem = ({ date, title, subtitle, blurb, img, children }: Props)
       <p className="item-subtitle">{subtitle}</p>
       <p className="item-blurb">{blurb}</p>
       <div className="item-image">
-        <img src={img.src} alt={img.alt} />
+        <Image unsized src={img.src} alt={img.alt} />
       </div>
     </div>
     <div className="item-body">

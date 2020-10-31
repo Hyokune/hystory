@@ -1,8 +1,8 @@
+import Banner from 'components/Banner'
+import Layout from 'components/Layout'
+import Section from 'components/Section'
 import { NextPage } from 'next'
 import React from 'react'
-import Banner from '../../components/Banner'
-import Layout from '../../components/Layout'
-import Section from '../../components/Section'
 
 class DevPage extends React.Component<NextPage> {
   render() {

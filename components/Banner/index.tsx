@@ -1,6 +1,7 @@
 import cx from 'classnames'
+import { Breakpoints } from 'lib/enums/breakpoints'
+import Image from 'next/image'
 import { Component } from 'react'
-import { Breakpoints } from '../../lib/enums/breakpoints'
 import GlowingSpinner from '../GlowingSpinner'
 
 interface Props {
@@ -55,7 +56,7 @@ class Banner extends Component<Props, State> {
           'fade-in-left': !reverse,
           'fade-in-right': reverse
         })}>
-          <img src={image.src} alt={image.alt} />
+          <Image unsized src={image.src} alt={image.alt} />
         </div>
         <div className={cx({
           'banner-description': true,

@@ -2,6 +2,7 @@ module.exports = {
   testEnvironment: "node",
   roots: ["<rootDir>/components"],
   preset: 'ts-jest',
+  setupFiles: ["<rootDir>/env-setup.js"],
   setupFilesAfterEnv: ["<rootDir>/jest.setup.tsx"],
   transform: { "^.+\\.tsx?$": "ts-jest" },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
