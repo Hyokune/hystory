@@ -67,6 +67,15 @@ exports[`Intro component render component without error 1`] = `
           </a>
         </Link>
       </li>
+      <li>
+        <a
+          href="mailto:lleehyuck@gmail.com"
+        >
+          <i
+            className="far fa-envelope"
+          />
+        </a>
+      </li>
     </ul>
   </div>
   <Image

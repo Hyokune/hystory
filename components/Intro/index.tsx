@@ -31,6 +31,11 @@ const Intro = () => (
             </a>
           </Link>
         </li>
+        <li>
+          <a href="mailto:lleehyuck@gmail.com">
+            <i className="far fa-envelope" />
+          </a>
+        </li>
       </ul>
     </div>
     <Image unsized src="/images/lance-alternative.png" alt="Lance alternative drawing by Kitoodles" />
