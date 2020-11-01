@@ -1,4 +1,5 @@
 // Current workaround for the new next/image issue when running Jest tests
+// https://github.com/vercel/next.js/discussions/18373
 process.env = {
   ...process.env,
   __NEXT_IMAGE_OPTS: {
