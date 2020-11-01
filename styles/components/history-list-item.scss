@@ -203,10 +203,6 @@
         line-height: 1.2rem;
       }
 
-      & + p {
-        margin-top: 0.6rem;
-      }
-
       span {
         &#blitzcrank {
           color: #d6bf2b;
@@ -230,10 +226,6 @@
 
         &#terran {
           color: #6b97e2;
-        }
-
-        &.bold {
-          font-weight: bold;
         }
 
         &.shadow {

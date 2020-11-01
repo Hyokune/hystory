@@ -11,6 +11,12 @@ exports[`Layout component render component without error 1`] = `
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      crossOrigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      rel="stylesheet"
+    />
   </Head>
   <Header />
   <main>

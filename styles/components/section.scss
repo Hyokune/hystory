@@ -9,6 +9,22 @@ section {
     padding: 0 4rem;
   }
 
+  &.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.full {
+    height: calc(100vh - 3rem);
+    min-height: calc(568px - 3rem);
+
+    @media screen and (min-width: breakpoints.$tablet-lg) {
+      height: calc(100vh - 3rem);
+    }
+  }
+
   .timeline {
     &:after {
       height: 100%;

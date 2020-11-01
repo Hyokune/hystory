@@ -1,0 +1,73 @@
+@use 'base/breakpoints';
+@use 'base/colors';
+
+.intro {
+  padding: 1rem;
+  position: relative;
+  background-color: rgba(colors.$black-1, .5);
+  box-shadow: 0 0 2rem 3rem rgba(colors.$black-1, .5);
+
+  img {
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 24rem;
+    max-width: 30rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: drop-shadow(.1rem .1rem .1rem rgba(rgb(46, 154, 255), .5));
+
+    @media screen and (min-width: breakpoints.$tablet-lg) {
+      width: 30rem;
+    }
+  }
+}
+
+.social-about {
+  margin-top: 2rem;
+
+  p {
+    font-size: .6rem;
+    text-align: center;
+    color: #acacac;
+
+    @media screen and (min-width: breakpoints.$tablet-lg) {
+      font-size: .7rem;
+    }
+  }
+}
+
+.social-links {
+  margin-top: .6rem;
+  display: flex;
+  justify-content: center;
+
+  li {
+    &:not(:first-child) {
+      margin-left: 1.4rem;
+    }
+  }
+
+  a {
+    &:hover {
+      i {
+        text-shadow: 2px 2px 2px rgb(46, 119, 255);
+      }
+    }
+  }
+
+  i {
+    font-size: 1.6rem;
+    transition: color .3s ease,
+                text-shadow .3s ease;
+
+    @media screen and (min-width: breakpoints.$tablet-lg) {
+      font-size: 1.8rem;
+    }
+  
+    @media screen and (min-width: breakpoints.$desktop) {
+      font-size: 2rem;
+    }
+  }
+}

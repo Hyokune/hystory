@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro component render component without error 1`] = `
+<div
+  className="intro"
+>
+  <h1
+    className="center"
+  >
+    Hello, I am Lance
+  </h1>
+  <p
+    className="center"
+  >
+    I'm currently a front-end developer aspiring to become a game developer
+  </p>
+  <div
+    className="social-about"
+  >
+    <p>
+      Follow me
+    </p>
+    <ul
+      className="social-links"
+    >
+      <li>
+        <a
+          href="https://github.com/Hyokune"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-github"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/hyokune"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-twitter"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/hyuck-lee-8104a0ba"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-linkedin-in"
+          />
+        </a>
+      </li>
+      <li>
+        <Link
+          href="/resume"
+        >
+          <a>
+            <i
+              className="far fa-id-badge"
+            />
+          </a>
+        </Link>
+      </li>
+    </ul>
+  </div>
+  <Image
+    alt="Lance alternative drawing by Kitoodles"
+    src="/images/lance-alternative.png"
+    unsized={true}
+  />
+</div>
+`;
