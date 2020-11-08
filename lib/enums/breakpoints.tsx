@@ -1,4 +1,4 @@
-export enum Breakpoints {
+enum Breakpoints {
   DesktopWide = 1440,
   DesktopLarge = 1280,
   Desktop = 1024,
@@ -8,3 +8,5 @@ export enum Breakpoints {
   Phone = 480,
   PhoneSmall = 320
 }
+
+export default Breakpoints;

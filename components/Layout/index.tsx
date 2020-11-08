@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import React, { Fragment } from 'react'
-import Header from '../Header'
+import Head from 'next/head';
+import React, { Fragment } from 'react';
+import Header from '../Header';
 
 interface Props {
-  children: JSX.Element[] | JSX.Element
+  children: JSX.Element[] | JSX.Element,
 }
 
 const Layout = ({ children }: Props) => (
@@ -18,6 +18,6 @@ const Layout = ({ children }: Props) => (
       {children}
     </main>
   </Fragment>
-)
+);
 
-export default Layout
+export default Layout;

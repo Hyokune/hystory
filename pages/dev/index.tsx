@@ -1,7 +1,7 @@
-import Banner from 'components/Banner'
-import Layout from 'components/Layout'
-import Section from 'components/Section'
-import React from 'react'
+import Banner from 'components/Banner';
+import Layout from 'components/Layout';
+import Section from 'components/Section';
+import React from 'react';
 
 const DevPage = () => (
   <Layout>
@@ -17,6 +17,6 @@ const DevPage = () => (
       </div>
     </Section>
   </Layout>
-)
+);
 
-export default DevPage
+export default DevPage;

@@ -1,14 +1,14 @@
-import React from 'react'
-import CircularArc from '../CircularArc'
+import React from 'react';
+import CircularArc from '../CircularArc';
 
 export interface Props {
   width: number,
-  height: number
+  height: number,
 }
 
 const GlowingSpinner = ({ width, height }: Props) => {
-  const halfWidth = width / 2
-  const halfHeight = height / 2
+  const halfWidth = width / 2;
+  const halfHeight = height / 2;
 
   return (
     <svg className="glowing-spinner" width={width} height={height}>
@@ -35,7 +35,7 @@ const GlowingSpinner = ({ width, height }: Props) => {
         <CircularArc x={halfWidth} y={halfHeight} radius={.22} startAngle={65} endAngle={120} strokeWidth={10} spinDuration={9}/>
       </g>
     </svg>
-  )
-}
+  );
+};
 
-export default GlowingSpinner
+export default GlowingSpinner;

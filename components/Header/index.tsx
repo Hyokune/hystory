@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 class Header extends React.Component {
   render() {
@@ -17,8 +17,8 @@ class Header extends React.Component {
           <a className="header-item">Dev</a>
         </Link>
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

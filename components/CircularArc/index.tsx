@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 interface Props {
   x: number,
@@ -7,32 +7,32 @@ interface Props {
   startAngle: number,
   endAngle: number,
   strokeWidth?: number,
-  spinDuration?: number
+  spinDuration?: number,
 }
 
 const CircularArc = ({ x, y, radius, startAngle, endAngle, strokeWidth = 8, spinDuration = 14 }: Props) => {
   const polarToCartesian = (centerX: number, centerY: number, radius: number, angleInDegrees: number) => {
-    const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0
+    const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
   
     return {
       x: centerX + (radius * Math.cos(angleInRadians)),
       y: centerY + (radius * Math.sin(angleInRadians))
-    }
-  }
+    };
+  };
   
   const describeArc = (x: number, y: number, radius: number, startAngle: number, endAngle: number) => {
-      const start = polarToCartesian(x, y, radius, endAngle)
-      const end = polarToCartesian(x, y, radius, startAngle)
+      const start = polarToCartesian(x, y, radius, endAngle);
+      const end = polarToCartesian(x, y, radius, startAngle);
   
-      const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1"
+      const largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
   
       const d = [
-        "M", start.x, start.y, 
-        "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y
-      ].join(" ")
+        'M', start.x, start.y, 
+        'A', radius, radius, 0, largeArcFlag, 0, end.x, end.y
+      ].join(' ');
   
-      return d
-  }
+      return d;
+  };
 
   return (
     <path d={describeArc(x, y, x * 2 * radius, startAngle, endAngle)} strokeWidth={strokeWidth}>
@@ -52,7 +52,7 @@ const CircularArc = ({ x, y, radius, startAngle, endAngle, strokeWidth = 8, spin
         repeatCount="indefinite"
       />
     </path>
-  )
-}
+  );
+};
 
-export default CircularArc
+export default CircularArc;

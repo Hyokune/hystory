@@ -1,10 +1,10 @@
-import cx from 'classnames'
-import React from 'react'
+import cx from 'classnames';
+import React from 'react';
 
 interface Props {
   center?: boolean,
   full?: boolean,
-  children: JSX.Element[] | JSX.Element
+  children: JSX.Element[] | JSX.Element,
 }
 
 const Section = ({ center, full, children }: Props) => (
@@ -15,6 +15,6 @@ const Section = ({ center, full, children }: Props) => (
   })}>
     {children}
   </section>
-)
+);
 
-export default Section
+export default Section;

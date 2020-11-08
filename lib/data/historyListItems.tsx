@@ -1,14 +1,14 @@
-import HistoryListItem from 'lib/interfaces/historyListItem'
-import { Fragment } from 'react'
+import HistoryListItem from 'lib/interfaces/historyListItem';
+import { Fragment } from 'react';
 
 // Could potentially connect to CMS for adding extra history items
 const HistoryListItems: HistoryListItem[] = [
   {
     id: 5,
-    date: "2012",
-    title: "Dragon Nest",
-    subtitle: "Eyedentity Games",
-    blurb: "World's fastest action MMORPG, but also the best",
+    date: '2012',
+    title: 'Dragon Nest',
+    subtitle: 'Eyedentity Games',
+    blurb: 'World\'s fastest action MMORPG, but also the best',
     img: { src: '/images/timeline/dragon-nest.png', alt: 'Dragon Nest' },
     body:
       <Fragment>
@@ -63,10 +63,10 @@ const HistoryListItems: HistoryListItem[] = [
   },
   {
     id: 4,
-    date: "2010",
-    title: "League of Legends",
-    subtitle: "Riot Games",
-    blurb: "The successful child of DotA, an online stand-alone MOBA game",
+    date: '2010',
+    title: 'League of Legends',
+    subtitle: 'Riot Games',
+    blurb: 'The successful child of DotA, an online stand-alone MOBA game',
     img: { src: '/images/timeline/league-of-legends.png', alt: 'League of Legends' },
     body:
       <Fragment>
@@ -96,9 +96,9 @@ const HistoryListItems: HistoryListItem[] = [
   },
   {
     id: 3,
-    date: "2007 | 2008",
-    title: "Defense of the Ancients",
-    subtitle: "Eul | Icefrog",
+    date: '2007 | 2008',
+    title: 'Defense of the Ancients',
+    subtitle: 'Eul | Icefrog',
     blurb: <Fragment>The birth of <span className="bold">TRUE MOBA</span> from a Warcraft III custom map</Fragment>,
     img: { src: '/images/timeline/dota-allstars.png', alt: 'Defense of the Ancients' },
     body:
@@ -117,10 +117,10 @@ const HistoryListItems: HistoryListItem[] = [
   },
   {
     id: 2,
-    date: "2005 | 2006",
-    title: "Maplestory",
-    subtitle: "Nexon | Wizet",
-    blurb: "Free-to-play 2D side-scrolling MMORPG",
+    date: '2005 | 2006',
+    title: 'Maplestory',
+    subtitle: 'Nexon | Wizet',
+    blurb: 'Free-to-play 2D side-scrolling MMORPG',
     img: { src: '/images/timeline/maplestory.png', alt: 'Maplestory' },
     body:
       <Fragment>
@@ -135,10 +135,10 @@ const HistoryListItems: HistoryListItem[] = [
   },
   {
     id: 1,
-    date: "2003",
-    title: "StarCraft: Brood War",
-    subtitle: "Blizzard",
-    blurb: "The father of real-time strategy, the video game that revolutionised the RTS genre",
+    date: '2003',
+    title: 'StarCraft: Brood War',
+    subtitle: 'Blizzard',
+    blurb: 'The father of real-time strategy, the video game that revolutionised the RTS genre',
     img: { src: '/images/timeline/starcraft.png', alt: 'StarCraft: Brood War' },
     body:
       <Fragment>
@@ -154,6 +154,6 @@ const HistoryListItems: HistoryListItem[] = [
         <p>Last but not least, <span id="terran" className="shadow">Terran</span> will always be the master race.</p>
       </Fragment>
   },
-]
+];
 
-export default HistoryListItems
+export default HistoryListItems;

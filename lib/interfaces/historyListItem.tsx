@@ -1,4 +1,4 @@
-export default interface HistoryListItem {
+interface HistoryListItem {
   id: number,
   date: string,
   title: string,
@@ -6,7 +6,9 @@ export default interface HistoryListItem {
   blurb: string | React.ReactElement,
   img: {
     src: string,
-    alt: string
+    alt: string,
   },
-  body: React.ReactElement
+  body: React.ReactElement,
 }
+
+export default HistoryListItem;

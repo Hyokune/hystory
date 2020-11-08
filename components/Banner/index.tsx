@@ -1,8 +1,8 @@
-import cx from 'classnames'
-import { Breakpoints } from 'lib/enums/breakpoints'
-import Image from 'next/image'
-import { Component } from 'react'
-import GlowingSpinner from '../GlowingSpinner'
+import cx from 'classnames';
+import Breakpoints from 'lib/enums/breakpoints';
+import Image from 'next/image';
+import { Component } from 'react';
+import GlowingSpinner from '../GlowingSpinner';
 
 interface Props {
   description: string,
@@ -11,40 +11,40 @@ interface Props {
     alt: string,
   },
   reverse?: boolean,
-  title: string
+  title: string,
 }
 
 interface State {
-  width: number
+  width: number,
 }
 
 class Banner extends Component<Props, State> {
   state = {
     width: 1000
-  }
+  };
 
   componentDidMount() {
-    this.calculateSpinnerSize()
-    window.addEventListener('resize', this.calculateSpinnerSize)
+    this.calculateSpinnerSize();
+    window.addEventListener('resize', this.calculateSpinnerSize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.calculateSpinnerSize)
+    window.removeEventListener('resize', this.calculateSpinnerSize);
   }
 
   calculateSpinnerSize = () => {
-    const { width } = this.state
+    const { width } = this.state;
 
     if (window.innerWidth > width && width < 1000) {
-      this.setState({ width: window.innerWidth })
+      this.setState({ width: window.innerWidth });
     } else if (window.innerWidth < width && window.innerWidth < Breakpoints.TabletLarge) {
-      this.setState({ width: window.innerWidth + 200 })
+      this.setState({ width: window.innerWidth + 200 });
     }
-  }
+  };
 
   render() {
-    const { description, image, reverse, title } = this.props
-    const { width } = this.state
+    const { description, image, reverse, title } = this.props;
+    const { width } = this.state;
 
     return (
       <div className={cx({
@@ -68,8 +68,8 @@ class Banner extends Component<Props, State> {
         </div>
         <GlowingSpinner width={width} height={1000} />
       </div>
-    )
+    );
   }
 }
 
-export default Banner
+export default Banner;

@@ -1,10 +1,10 @@
 
-import HistoryListItem from 'lib/interfaces/historyListItem'
-import Image from 'next/image'
-import React from 'react'
+import HistoryListItem from 'lib/interfaces/historyListItem';
+import Image from 'next/image';
+import React from 'react';
 
 export interface Props {
-  items?: HistoryListItem[]
+  items?: HistoryListItem[],
 }
 
 const HistoryList = ({ items = [] }: Props) => (
@@ -26,6 +26,6 @@ const HistoryList = ({ items = [] }: Props) => (
       </li>
     )}
   </ul>
-)
+);
 
-export default HistoryList
+export default HistoryList;

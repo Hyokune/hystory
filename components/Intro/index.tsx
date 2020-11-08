@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const Intro = () => (
   <div className="intro">
@@ -40,6 +40,6 @@ const Intro = () => (
     </div>
     <Image unsized src="/images/lance-alternative.png" alt="Lance alternative drawing by Kitoodles" />
   </div>
-)
+);
 
-export default Intro
+export default Intro;

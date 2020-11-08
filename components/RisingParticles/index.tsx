@@ -1,11 +1,11 @@
-import React from 'react'
-import Particle from '../Particle'
+import React from 'react';
+import Particle from '../Particle';
 
 const RisingParticles = () => {
-  const particles = []
+  const particles = [];
 
   for (let index = 0; index < 100; index++) {
-    particles.push(index)
+    particles.push(index);
   }
 
   return (
@@ -14,7 +14,7 @@ const RisingParticles = () => {
         { particles.map((_particle, index) => <Particle key={index} />) }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RisingParticles
+export default RisingParticles;
