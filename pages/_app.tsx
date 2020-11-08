@@ -1,15 +1,9 @@
-import App, { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import React from 'react';
 import 'styles/index.scss';
 
-class Application extends App<AppProps> {
-  render() {
-    const { Component, pageProps } = this.props;
-
-    return (
-      <Component {...pageProps} />
-    );
-  }
-}
+const Application = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} />
+);
 
 export default Application;

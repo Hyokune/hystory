@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import Breakpoints from 'lib/enums/breakpoints';
 import Image from 'next/image';
-import { Component } from 'react';
+import { useEffect, useState } from 'react';
 import GlowingSpinner from '../GlowingSpinner';
 
 interface Props {
@@ -14,62 +14,48 @@ interface Props {
   title: string,
 }
 
-interface State {
-  width: number,
-}
+const Banner = ({ description, image, reverse, title }: Props) => {
+  const [width, setWidth] = useState(1000);
 
-class Banner extends Component<Props, State> {
-  state = {
-    width: 1000
-  };
-
-  componentDidMount() {
-    this.calculateSpinnerSize();
-    window.addEventListener('resize', this.calculateSpinnerSize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.calculateSpinnerSize);
-  }
-
-  calculateSpinnerSize = () => {
-    const { width } = this.state;
-
+  const calculateSpinnerSize = () => {
     if (window.innerWidth > width && width < 1000) {
-      this.setState({ width: window.innerWidth });
+      setWidth(window.innerWidth);
     } else if (window.innerWidth < width && window.innerWidth < Breakpoints.TabletLarge) {
-      this.setState({ width: window.innerWidth + 200 });
+      setWidth(window.innerWidth + 200);
     }
   };
 
-  render() {
-    const { description, image, reverse, title } = this.props;
-    const { width } = this.state;
+  useEffect(() => {
+    window.addEventListener('resize', calculateSpinnerSize);
 
-    return (
+    return () => {
+      window.removeEventListener('resize', calculateSpinnerSize);
+    };
+  }, [calculateSpinnerSize]);
+
+  return (
+    <div className={cx({
+      banner: true,
+      reverse: reverse
+    })}>
       <div className={cx({
-        banner: true,
-        reverse: reverse
+        'banner-image': true,
+        'fade-in-left': !reverse,
+        'fade-in-right': reverse
       })}>
-        <div className={cx({
-          'banner-image': true,
-          'fade-in-left': !reverse,
-          'fade-in-right': reverse
-        })}>
-          <Image unsized src={image.src} alt={image.alt} />
-        </div>
-        <div className={cx({
-          'banner-description': true,
-          'fade-in-left': reverse,
-          'fade-in-right': !reverse
-        })}>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </div>
-        <GlowingSpinner width={width} height={1000} />
+        <Image unsized src={image.src} alt={image.alt} />
       </div>
-    );
-  }
-}
+      <div className={cx({
+        'banner-description': true,
+        'fade-in-left': reverse,
+        'fade-in-right': !reverse
+      })}>
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
+      <GlowingSpinner width={width} height={1000} />
+    </div>
+  );
+};
 
 export default Banner;
