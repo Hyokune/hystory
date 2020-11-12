@@ -18,14 +18,15 @@ h1 {
   font-size: 1.6rem;
   line-height: 2rem;
   text-transform: uppercase;
+  transition: font-size .3s ease;
 
   @media screen and (min-width: breakpoints.$tablet-lg) {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 3rem;
   }
 
   @media screen and (min-width: breakpoints.$desktop) {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 3.2rem;
   }
 }
@@ -33,6 +34,7 @@ h1 {
 p {
   font-size: .7rem;
   line-height: .9rem;
+  transition: font-size .3s ease;
 
   @media screen and (min-width: breakpoints.$tablet-lg) {
     font-size: .8rem;
@@ -40,7 +42,7 @@ p {
   }
 
   @media screen and (min-width: breakpoints.$desktop) {
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1.2rem;
   }
 }

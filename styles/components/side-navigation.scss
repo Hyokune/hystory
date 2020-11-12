@@ -1,0 +1,47 @@
+@use 'base/breakpoints';
+@use 'base/colors';
+
+.side-navigation {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  @media screen and (min-width: breakpoints.$tablet) {
+    display: flex;
+  }
+}
+
+.side-navigation-links {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.side-navigation-left, .side-navigation-right {
+  height: 100%;
+  margin: 0;
+  padding: 0 1.4rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  line-height: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgb(114, 114, 114);
+  transition: text-shadow .3s ease;
+
+  &:hover {
+    text-shadow: 2px 2px 2px rgb(46, 119, 255);
+  }
+}
+
+.side-navigation-left {
+  left: 0;
+}
+
+.side-navigation-right {
+  right: 0;
+}
