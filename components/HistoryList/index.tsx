@@ -1,7 +1,6 @@
-
-import NextImage from 'components/NextImage';
 import HistoryListItem from 'lib/interfaces/historyListItem';
 import React from 'react';
+import NextImage from '../NextImage';
 
 export interface Props {
   items?: HistoryListItem[],

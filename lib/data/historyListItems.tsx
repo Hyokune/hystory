@@ -4,6 +4,83 @@ import { Fragment } from 'react';
 // Could potentially connect to CMS for adding extra history items
 const HistoryListItems: HistoryListItem[] = [
   {
+    id: 12,
+    date: '2018',
+    title: 'Monster Hunter: World ',
+    subtitle: 'Capcom',
+    blurb: 'Gather, trap and hunt big monsters',
+    img: { src: '/images/timeline/monster-hunter-world.png', alt: 'Monster Hunter: World' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
+    id: 11,
+    date: '2018',
+    title: 'Final Fantasy XV',
+    subtitle: 'Square Enix',
+    blurb: 'The story of a prince to reclaim the throne',
+    img: { src: '/images/timeline/final-fantasy-xv.png', alt: 'Final Fantasy XV' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
+    id: 10,
+    date: '2017',
+    title: 'Tekken 7',
+    subtitle: 'BANDAI NAMCO',
+    blurb: 'The epic conclusion of the Mishima clan',
+    img: { src: '/images/timeline/tekken-7.png', alt: 'Tekken 7' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
+    id: 9,
+    date: '2017',
+    title: 'PLAYERUNKNOWN\'S BATTLEGROUNDS',
+    subtitle: 'PUBG Corporation',
+    blurb: 'Large scale battle royale game, aka looting simulator',
+    img: { src: '/images/timeline/pubg.png', alt: 'PLAYERUNKNOWN\'S BATTLEGROUNDS' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
+    id: 8,
+    date: '2016',
+    title: 'Black Desert Online',
+    subtitle: 'Pearl Abyss',
+    blurb: 'Beer cooking simulator',
+    img: { src: '/images/timeline/black-desert-online.png', alt: 'Black Desert Online' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
+    id: 7,
+    date: '2015',
+    title: 'Counter Strike: Global Offensive',
+    subtitle: 'Valve',
+    blurb: 'Bomb has been planted',
+    img: { src: '/images/timeline/counter-strike-global-offensive.png', alt: 'Counter Strike: Global Offensive' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
+    id: 6,
+    date: '2014',
+    title: 'Dota 2',
+    subtitle: 'Valve',
+    blurb: 'The sequel to Defence of the Ancients',
+    img: { src: '/images/timeline/dota-2.png', alt: 'Dota 2' },
+    body:
+      <Fragment>
+      </Fragment>
+  },
+  {
     id: 5,
     date: '2012',
     title: 'Dragon Nest',

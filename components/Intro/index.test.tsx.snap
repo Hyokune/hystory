@@ -78,10 +78,12 @@ exports[`Intro component render component without error 1`] = `
       </li>
     </ul>
   </div>
-  <Image
+  <NextImage
+    absolute={true}
     alt="Lance alternative drawing by Kitoodles"
+    height={300}
     src="/images/lance-alternative.png"
-    unsized={true}
+    width={300}
   />
 </div>
 `;

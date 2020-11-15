@@ -1,6 +1,6 @@
-import NextImage from 'components/NextImage';
 import Link from 'next/link';
 import React from 'react';
+import NextImage from '../NextImage';
 
 const Intro = () => (
   <div className="intro">

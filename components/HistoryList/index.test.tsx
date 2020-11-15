@@ -51,7 +51,7 @@ describe('HistoryList component', () => {
       const blurb = item.find('p.item-blurb');
       expect(blurb.text()).toEqual(items[index].blurb);
 
-      const image = item.find('Image');
+      const image = item.find('NextImage');
       expect(image.props().src).toEqual(items[index].img.src);
       expect(image.props().alt).toEqual(items[index].img.alt);
 
