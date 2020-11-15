@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import NextImage from 'components/NextImage';
 import Breakpoints from 'lib/enums/breakpoints';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -43,7 +44,7 @@ const Banner = ({ description, image, reverse, title }: Props) => {
         'fade-in-left': !reverse,
         'fade-in-right': reverse
       })}>
-        <Image unsized src={image.src} alt={image.alt} />
+      <NextImage width={460} height={460} src={image.src} alt={image.alt} />
       </div>
       <div className={cx({
         'banner-description': true,

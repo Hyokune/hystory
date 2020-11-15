@@ -116,16 +116,6 @@
     align-items: flex-start;
     flex-direction: column;
 
-    .item-image {
-      margin-top: 1rem;
-      max-width: 40rem;
-      box-shadow: .3rem .3rem .5rem 0 rgba(white, .3);
-
-      img {
-        width: 100%;
-      }
-    }
-
     .item-date {
       font-size: 0.8rem;
       font-weight: 500;
@@ -183,6 +173,11 @@
         color: rgb(199, 199, 199);
         font-weight: bold;
       }
+    }
+
+    .next-image {
+      margin-top: 1rem;
+      box-shadow: .3rem .3rem .5rem 0 rgba(white, .3);
     }
   }
 

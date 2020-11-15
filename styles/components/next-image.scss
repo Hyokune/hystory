@@ -1,0 +1,8 @@
+.next-image {
+  width: auto;
+  position: relative;
+
+  &.absolute {
+    width: 100%;
+  }
+}

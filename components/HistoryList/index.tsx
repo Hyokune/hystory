@@ -1,6 +1,6 @@
 
+import NextImage from 'components/NextImage';
 import HistoryListItem from 'lib/interfaces/historyListItem';
-import Image from 'next/image';
 import React from 'react';
 
 export interface Props {
@@ -16,9 +16,7 @@ const HistoryList = ({ items = [] }: Props) => (
           <h2 className="item-title">{item.title}</h2>
           <p className="item-subtitle">{item.subtitle}</p>
           <p className="item-blurb">{item.blurb}</p>
-          <div className="item-image">
-            <Image unsized {...item.img} />
-          </div>
+          <NextImage width={1024} height={576} {...item.img} />
         </div>
         <div className="item-body">
           {item.body}

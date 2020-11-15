@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImage from 'components/NextImage';
 import Link from 'next/link';
 import React from 'react';
 
@@ -38,7 +38,7 @@ const Intro = () => (
         </li>
       </ul>
     </div>
-    <Image unsized src="/images/lance-alternative.png" alt="Lance alternative drawing by Kitoodles" />
+    <NextImage absolute width={300} height={300} src="/images/lance-alternative.png" alt="Lance alternative drawing by Kitoodles" />
   </div>
 );
 
