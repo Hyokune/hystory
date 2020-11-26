@@ -1,22 +1,24 @@
 import Banner from 'components/Banner';
+import DevLogList from 'components/DevLogList';
 import Layout from 'components/Layout';
 import Section from 'components/Section';
+import DevLogListItems from 'lib/data/devLogItems';
 import React from 'react';
 
-const DevPage = () => (
+const DevLogPage = () => (
   <Layout>
     <Section>
       <Banner
         description="A dungeon where I leave my logs for others to explore"
         image={{ src: '/images/lance.png', alt: 'Lance' }}
         reverse
-        title="Dev blog"
+        title="Dev Log"
       />
-      <div className="timeline start">
-        <p>THIS SECTION IS UNDER DEVELOPMENT :(</p>
-      </div>
+    </Section>
+    <Section>
+      <DevLogList items={DevLogListItems} />
     </Section>
   </Layout>
 );
 
-export default DevPage;
+export default DevLogPage;

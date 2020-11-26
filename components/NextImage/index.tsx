@@ -15,7 +15,13 @@ const NextImage = ({ absolute, width, height, src, alt }: Props) => (
     'next-image': true,
     absolute
   })}>
-    <Image layout={absolute ? 'responsive' : 'intrinsic'} width={width} height={height} src={src} alt={alt} />
+    <Image
+      layout={absolute ? 'responsive' : 'intrinsic'}
+      width={width}
+      height={height}
+      src={src}
+      alt={alt}
+    />
   </div>
 );
 

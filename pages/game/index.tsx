@@ -6,7 +6,7 @@ import Section from 'components/Section';
 import HistoryListItems from 'lib/data/historyListItems';
 import React from 'react';
 
-const GamePage = () => (
+const GameLogPage = () => (
   <Layout>
     <RisingParticles />
     <Section>
@@ -26,4 +26,4 @@ const GamePage = () => (
   </Layout>
 );
 
-export default GamePage;
+export default GameLogPage;
