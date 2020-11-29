@@ -10,8 +10,8 @@
   .next-image {
     top: 50%;
     left: 50%;
-    min-width: 24rem;
-    max-width: 30rem;
+    min-width: 38rem;
+    max-width: 50rem;
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -23,24 +23,24 @@
   margin-top: 2rem;
 
   p {
-    font-size: .6rem;
+    font-size: 1rem;
     text-align: center;
     color: #acacac;
 
     @media screen and (min-width: breakpoints.$tablet-lg) {
-      font-size: .7rem;
+      font-size: 1.2rem;
     }
   }
 }
 
 .social-links {
-  margin-top: .6rem;
+  margin-top: .8rem;
   display: flex;
   justify-content: center;
 
   li {
     &:not(:first-child) {
-      margin-left: 1.4rem;
+      margin-left: 1.8rem;
     }
   }
 
@@ -53,16 +53,16 @@
   }
 
   i {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     transition: color .3s ease,
                 text-shadow .3s ease;
 
     @media screen and (min-width: breakpoints.$tablet-lg) {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
   
     @media screen and (min-width: breakpoints.$desktop) {
-      font-size: 1.8rem;
+      font-size: 2.6rem;
     }
   }
 }

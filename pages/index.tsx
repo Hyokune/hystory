@@ -6,7 +6,7 @@ import SideNavigation from 'components/SideNavigation';
 import React from 'react';
 
 const HomePage = () => (
-  <Layout>
+  <Layout noPadding>
     <RisingParticles />
     <Section center full>
       <SideNavigation

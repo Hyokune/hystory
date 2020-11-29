@@ -19,7 +19,9 @@ exports[`Layout component render component without error 1`] = `
     />
   </Head>
   <Header />
-  <main>
+  <main
+    className=""
+  >
     <p>
       Child element
     </p>

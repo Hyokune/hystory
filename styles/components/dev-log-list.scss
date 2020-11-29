@@ -2,22 +2,18 @@
 @use 'base/colors';
 
 .dev-log-list {
-  padding: 6rem .4rem 2rem;
-
-  @media screen and (min-width: breakpoints.$phone-lg) {
-    padding: 6rem 3rem 2rem;
-  }
+  padding: 6rem 2rem 2rem;
 
   @media screen and (min-width: breakpoints.$tablet) {
-    padding: 6rem 3rem 2rem;
-  }
-
-  @media screen and (min-width: breakpoints.$tablet-lg) {
-    padding: 6rem 0 2rem;
-  }
-
-  @media screen and (min-width: breakpoints.$desktop-lg) {
     padding: 6rem 6rem 2rem;
+  }
+
+  @media screen and (min-width: breakpoints.$desktop) {
+    padding: 6rem 10rem 2rem;
+  }
+
+  @media screen and (min-width: breakpoints.$desktop-wide) {
+    padding: 6rem 0 2rem;
   }
 }
 
@@ -25,11 +21,12 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
   border: 1px solid rgba(white, .2);
   border-radius: .4rem;
   transition: background-color .2s ease;
 
-  @media screen and (min-width: breakpoints.$tablet) {
+  @media screen and (min-width: breakpoints.$phone-lg) {
     flex-direction: row;
   }
 
@@ -38,8 +35,8 @@
   }
 
   .item-body {
-    @media screen and (min-width: breakpoints.$tablet) {
-      padding-left: 1rem;
+    @media screen and (min-width: breakpoints.$phone-lg) {
+      padding-left: 2rem;
     }
   }
 
@@ -47,8 +44,8 @@
     width: 100%;
     height: auto;
 
-    @media screen and (min-width: breakpoints.$tablet) {
-      min-width: 18rem;
+    @media screen and (min-width: breakpoints.$phone-lg) {
+      min-width: 20rem;
       max-width: 20rem;
     }
 
@@ -62,35 +59,41 @@
   }
 
   .item-title {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    line-height: 2.2rem;
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
     font-weight: 600;
     text-transform: uppercase;
 
-    @media screen and (min-width: breakpoints.$tablet) {
+    @media screen and (min-width: breakpoints.$phone-lg) {
       margin-top: 0;
     }
 
     @media screen and (min-width: breakpoints.$tablet-lg) {
-      font-size: 1.6rem;
-      line-height: 2.6rem;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
+
+    @media screen and (min-width: breakpoints.$desktop-lg) {
+      font-size: 2.4rem;
+      line-height: 3rem;
     }
   }
 
   .item-date {
     margin-top: 0;
-    font-size: .6rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     font-weight: 400;
   }
 
   .item-blurb {
-    font-size: .4rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
 
     @media screen and (min-width: breakpoints.$tablet) {
-      font-size: .7rem;
-      line-height: 1.3rem;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
     }
   }
 }

@@ -1,12 +1,14 @@
+import cx from 'classnames';
 import Head from 'next/head';
 import React, { Fragment } from 'react';
 import Header from '../Header';
 
 interface Props {
   children: JSX.Element[] | JSX.Element,
+  noPadding?: boolean,
 }
 
-const Layout = ({ children }: Props) => (
+const Layout = ({ children, noPadding }: Props) => (
   <Fragment>
     <Head>
       <title>Hystory</title>
@@ -14,7 +16,7 @@ const Layout = ({ children }: Props) => (
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossOrigin="anonymous" />
     </Head>
     <Header />
-    <main>
+    <main className={cx({ 'no-padding': noPadding })}>
       {children}
     </main>
   </Fragment>

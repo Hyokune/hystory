@@ -1,6 +1,12 @@
+@use 'base/breakpoints';
 @use 'base/colors';
 
+html {
+  font-size: 62.5%;
+}
+
 body * {
+  font-size: 1.6rem;
   font-family: 'Nexon Lv1 Gothic', sans-serif;
   color: white;
 
@@ -18,9 +24,18 @@ body * {
 
   main {
     width: 100%;
-    padding-top: 3rem; 
+    min-height: 100vh;
+    padding: 4.6rem 0 0;
     display: block;
     position: relative;
     background-color: colors.$black-1;
+
+    @media screen and (min-width: breakpoints.$desktop-wide) {
+      padding: 4.6rem 26rem 0;
+    }
+
+    &.no-padding {
+      padding: 4.6rem 0 0;
+    }
   }
 }

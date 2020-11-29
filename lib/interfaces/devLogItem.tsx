@@ -1,13 +1,12 @@
 interface DevLogItem {
   id: number,
-  date: Date,
+  date: string,
   title: string,
-  blurb: string | React.ReactElement,
+  blurb: string,
   img: {
     src: string,
     alt: string,
   },
-  body: React.ReactElement,
 }
 
 export default DevLogItem;

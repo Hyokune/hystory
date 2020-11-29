@@ -2,5 +2,17 @@
 @use 'base/colors';
 
 .history-list {
-  padding: 6rem 0 2rem;
+  padding: 6rem 2rem 2rem;
+
+  @media screen and (min-width: breakpoints.$tablet) {
+    padding: 6rem 8rem 2rem;
+  }
+
+  @media screen and (min-width: breakpoints.$tablet-lg) {
+    padding: 6rem 4rem 2rem;
+  }
+
+  @media screen and (min-width: breakpoints.$desktop-wide) {
+    padding: 6rem 0 2rem;
+  }
 }

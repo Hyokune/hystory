@@ -1,7 +1,6 @@
 import cx from 'classnames';
 import NextImage from 'components/NextImage';
 import Breakpoints from 'lib/enums/breakpoints';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import GlowingSpinner from '../GlowingSpinner';
 
@@ -20,13 +19,14 @@ const Banner = ({ description, image, reverse, title }: Props) => {
 
   const calculateSpinnerSize = () => {
     if (window.innerWidth > width && width < 1000) {
-      setWidth(window.innerWidth);
+      setWidth(Math.min(1000, window.innerWidth));
     } else if (window.innerWidth < width && window.innerWidth < Breakpoints.TabletLarge) {
       setWidth(window.innerWidth + 200);
     }
   };
 
   useEffect(() => {
+    calculateSpinnerSize();
     window.addEventListener('resize', calculateSpinnerSize);
 
     return () => {
