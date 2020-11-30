@@ -1,5 +1,4 @@
 import DevLogItem from 'lib/interfaces/devLogItem';
-import moment from 'moment';
 import React from 'react';
 
 export interface Props {
@@ -14,7 +13,7 @@ const DevLogList = ({ items = [] }: Props) => (
           <img {...item.img} />
           <div className="item-body">
             <h2 className="item-title">{item.title}</h2>
-            <p className="item-date">{moment(item.date).format('DD/MM/YYYY')}</p>
+            <p className="item-date">{item.date}</p>
             <p className="item-blurb">{item.blurb}</p>
           </div>
         </a>

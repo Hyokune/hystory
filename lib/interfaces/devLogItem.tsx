@@ -1,5 +1,8 @@
+import HeroCategories from 'lib/enums/heroCategories';
+
 interface DevLogItem {
   id: number,
+  category: HeroCategories,
   date: string,
   title: string,
   blurb: string,

@@ -11,9 +11,12 @@ interface Props {
 
 const DevLogContentPage = ({ devLogItem }: Props) => {
   return (
-    <Layout>
-      <Section>
-        <h1>{devLogItem.title}</h1>
+    <Layout noPadding>
+      <Section center full hero backgroundImage={devLogItem.img.src}>
+        <p className="section-hero-category">{devLogItem.category}</p>
+        <h1 className="section-hero-title">{devLogItem.title}</h1>
+        <p className="section-hero-date">{devLogItem.date}</p>
+        <p className="section-hero-blurb">{devLogItem.blurb}</p>
       </Section>
     </Layout>
   );

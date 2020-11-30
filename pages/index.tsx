@@ -8,7 +8,7 @@ import React from 'react';
 const HomePage = () => (
   <Layout noPadding>
     <RisingParticles />
-    <Section center full>
+    <Section center full hero>
       <SideNavigation
         leftRoute={{ href: '/game', text: 'Game' }}
         rightRoute={{ href: '/dev', text: 'Dev' }}
