@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import React, { Fragment } from 'react';
+import React from 'react';
 
 interface Props {
   children: JSX.Element[] | JSX.Element,
@@ -18,7 +18,7 @@ const Section = ({ children, backgroundImage, center, full, hero }: Props) => (
   })}>
     {
       backgroundImage &&
-        <Fragment>
+        <>
           <style jsx>
             {`
               .section-hero {
@@ -28,7 +28,7 @@ const Section = ({ children, backgroundImage, center, full, hero }: Props) => (
             `}
           </style>
           <div className="section-hero" />
-        </Fragment>
+        </>
     }
     {children}
   </section>

@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import Head from 'next/head';
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from '../Header';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Layout = ({ children, noPadding }: Props) => (
-  <Fragment>
+  <>
     <Head>
       <title>Hystory</title>
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
@@ -19,7 +19,7 @@ const Layout = ({ children, noPadding }: Props) => (
     <main className={cx({ 'no-padding': noPadding })}>
       {children}
     </main>
-  </Fragment>
+  </>
 );
 
 export default Layout;

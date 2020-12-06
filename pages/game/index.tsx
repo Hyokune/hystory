@@ -1,14 +1,12 @@
 import Banner from 'components/Banner';
 import HistoryList from 'components/HistoryList';
 import Layout from 'components/Layout';
-import RisingParticles from 'components/RisingParticles';
 import Section from 'components/Section';
 import HistoryListItems from 'lib/data/historyListItems';
 import React from 'react';
 
 const GameLogPage = () => (
   <Layout>
-    <RisingParticles />
     <Section>
       <Banner
         description="Timeline and review of the adventures till now"
