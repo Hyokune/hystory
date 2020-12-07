@@ -24,10 +24,19 @@
   text-decoration: none;
   border: 1px solid rgba(white, .2);
   border-radius: .4rem;
+  text-shadow: none;
   transition: background-color .2s ease;
 
   @media screen and (min-width: breakpoints.$phone-lg) {
     flex-direction: row;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    transition: text-shadow .3s ease;
+    
+    &:hover {
+      text-shadow: none;
+    }
   }
 
   &:hover {

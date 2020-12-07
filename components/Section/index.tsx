@@ -6,15 +6,16 @@ interface Props {
   backgroundImage?: string,
   center?: boolean,
   full?: boolean,
-  hero?: boolean,
+  logHeader?: boolean,
+  logSection?: boolean,
 }
 
-const Section = ({ children, backgroundImage, center, full, hero }: Props) => (
+const Section = ({ children, backgroundImage, center, full, logHeader, logSection }: Props) => (
   <section className={cx({
-    'section': true,
+    'log-header': logHeader,
+    'log-section': logSection,
     'center': center,
     'full': full,
-    'hero': hero
   })}>
     {
       backgroundImage &&

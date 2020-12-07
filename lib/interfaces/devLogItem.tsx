@@ -10,6 +10,7 @@ interface DevLogItem {
     src: string,
     alt: string,
   },
+  content: string,
 }
 
 export default DevLogItem;

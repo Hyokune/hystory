@@ -12,11 +12,14 @@ interface Props {
 const DevLogContentPage = ({ devLogItem }: Props) => {
   return (
     <Layout noPadding>
-      <Section center full hero backgroundImage={devLogItem.img.src}>
+      <Section center full logHeader backgroundImage={devLogItem.img.src}>
         <p className="section-hero-category">{devLogItem.category}</p>
         <h1 className="section-hero-title">{devLogItem.title}</h1>
         <p className="section-hero-date">{devLogItem.date}</p>
         <p className="section-hero-blurb">{devLogItem.blurb}</p>
+      </Section>
+      <Section logSection>
+        <div className="log-section-content" dangerouslySetInnerHTML={{ __html: devLogItem.content }} />
       </Section>
     </Layout>
   );
@@ -28,8 +31,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     params: { id: devLogItem.id.toString() },
   }));
 
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
   return { paths, fallback: false };
 };
 

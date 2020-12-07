@@ -22,14 +22,6 @@ section {
     }
   }
 
-  &.hero {
-    padding: 1rem;
-
-    @media screen and (min-width: breakpoints.$tablet) {
-      padding: 0;
-    }
-  }
-
   .timeline {
     &:after {
       content: '';
@@ -84,7 +76,7 @@ section {
   line-height: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: rgba(colors.$blue-1, .8);
+  background-color: rgba(colors.$blue-2, .8);
 
   @media screen and (min-width: breakpoints.$tablet) {
     padding: .8rem 1.4rem;
@@ -127,4 +119,21 @@ section {
 .section-hero-blurb {
   margin-top: 2rem;
   text-align: center;
+}
+
+.log-header {
+  padding: 1rem;
+
+  @media screen and (min-width: breakpoints.$tablet) {
+    padding: 0;
+  }
+}
+
+.log-section {
+  padding: 6rem 3rem;
+}
+
+.log-section-content {
+  max-width: 90rem;
+  margin: 0 auto;
 }

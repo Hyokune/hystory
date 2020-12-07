@@ -183,14 +183,6 @@
       }
 
       span {
-        font-size: 1.1rem;
-        line-height: 1.7rem;
-
-        @media screen and (min-width: breakpoints.$tablet-lg) {
-          font-size: 1.2rem;
-          line-height: 1.8rem;
-        }
-        
         &#blitzcrank {
           color: #d6bf2b;
         }
