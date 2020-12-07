@@ -5,7 +5,8 @@
   height: 100%;
   position: fixed;
   overflow: hidden;
-  z-index: 1;
+  z-index: 98;
+  pointer-events: none;
 
   .rising-particles {
     position: relative;

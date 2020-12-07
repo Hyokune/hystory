@@ -18,7 +18,6 @@ exports[`Layout component render component without error 1`] = `
       rel="stylesheet"
     />
   </Head>
-  <Header />
   <main
     className=""
   >

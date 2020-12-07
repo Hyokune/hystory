@@ -14,12 +14,12 @@ const RisingParticles = ({ children }: Props) => {
 
   return (
     <>
+      {children}
       <div className="rising-particles-wrapper">
         <div className="rising-particles">
           { particles.map((_particle, index) => <Particle key={index} />) }
         </div>
       </div>
-      {children}
     </>
   );
 };
