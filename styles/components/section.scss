@@ -121,6 +121,55 @@ section {
   text-align: center;
 }
 
+.section-hero-scroll {
+  bottom: 4rem;
+  left: 50%;
+  position: absolute;
+  transition: opacity .3s ease;
+  transform: translateX(-50%);
+
+  &.hide {
+    opacity: 0;
+  }
+
+  a {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+
+    @media (hover: hover) and (pointer: fine) {
+      transition: text-shadow .3s ease;
+  
+      &:hover:before {
+        top: 2rem;
+        box-shadow: 2px 2px 2px colors.$blue-1;
+      }
+    }
+
+    @media screen and (min-width: breakpoints.$tablet) {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+    &:before {
+      content: '';
+      width: .8rem;
+      height: .8rem;
+      top: 1.8rem;
+      left: 50%;
+      border: 1px solid white;
+      border-color: transparent white white transparent;
+      position: absolute;
+      transition: top .3s ease,
+                  box-shadow .3s ease;
+      transform: translateX(-50%)
+                 rotate(45deg);
+    }
+  }
+}
+
 .log-header {
   padding: 1rem;
 

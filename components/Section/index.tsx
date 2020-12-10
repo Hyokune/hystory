@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 interface Props {
   children: JSX.Element[] | JSX.Element,
@@ -10,13 +10,15 @@ interface Props {
   logSection?: boolean,
 }
 
-const Section = ({ children, backgroundImage, center, full, logHeader, logSection }: Props) => (
-  <section className={cx({
-    'log-header': logHeader,
-    'log-section': logSection,
-    'center': center,
-    'full': full,
-  })}>
+const Section = forwardRef<HTMLDivElement, Props>(({ children, backgroundImage, center, full, logHeader, logSection }, ref) => (
+  <section
+    ref={ref}
+    className={cx({
+      'log-header': logHeader,
+      'log-section': logSection,
+      'center': center,
+      'full': full,
+    })}>
     {
       backgroundImage &&
         <>
@@ -33,6 +35,6 @@ const Section = ({ children, backgroundImage, center, full, logHeader, logSectio
     }
     {children}
   </section>
-);
+));
 
 export default Section;
