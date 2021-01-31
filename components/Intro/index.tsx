@@ -20,12 +20,12 @@ const Intro = () => (
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/hyuck-lee-8104a0ba" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/hyuck-lee" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin-in" />
           </a>
         </li>
         <li>
-          <Link href="/resume">
+          <Link href="/resume.pdf">
             <a>
               <i className="far fa-id-badge" />
             </a>
