@@ -1,7 +1,8 @@
 enum HeroCategories {
   Announcement = 'Announcement',
   Feature = 'Feature',
-  Update = 'Update'
+  Update = 'Update',
+  Blog = 'Blog'
 }
 
 export default HeroCategories;
