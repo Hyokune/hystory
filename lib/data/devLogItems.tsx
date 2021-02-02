@@ -4,12 +4,12 @@ import moment from 'moment';
 
 const DevLogItems: DevLogItem[] = [
   {
-    id: 2,
+    id: 3,
     category: HeroCategories.Blog,
     date: moment('2021-01-24', 'YYYY-MM-DD').format('DD/MM/YYYY'),
-    title: 'Peaking into the game engine',
-    blurb: 'Learning the fundamentals and basic usage of Unreal Engine 4',
-    img: { src: '/images/dev-log/dev-log-2.png', alt: 'Dev Log 2 Image' },
+    title: 'Diving into the world',
+    blurb: 'Getting bored of looking at plain boxes and spheres',
+    img: { src: '/images/dev-log/dev-log-3.png', alt: 'Dev Log 3 Image' },
     content: `
       <p>
         After following a bit of the Udemy course mentioned in my previous post, I realised that my knowledge wasn't really going to expand or get better if I only followed the instructions given in the course. 
@@ -27,7 +27,7 @@ const DevLogItems: DevLogItem[] = [
       </p>
       <p>
         In the first chapter he teaches the basic controls and explains the engine's user interface to help any new starters on the engine. 
-        The second chapter consisted of adding different type of objects (also known as Actors) into the scene then applying materials to those objects. He also went further to explain how 
+        The second chapter consisted of adding different type of actors into the scene then applying materials to those objects. He also went further to explain how 
         changing certain parameter values was able to produce a different style of the same material which have been covered in the Udemy course so I was able to quickly go through these first 
         two chapters. From the third chapter onwards was where the environment creation started.
       </p>
@@ -52,6 +52,48 @@ const DevLogItems: DevLogItem[] = [
         With the skills I learned in this course combined with the Udemy course I hope I will be able to create a playable level with some added game mechanics.
       </p> 
       <img src="/images/dev-log/ue4-forest-level.png" alt="UE4 Forest Level" />
+    `
+  },
+  {
+    id: 2,
+    category: HeroCategories.Blog,
+    date: moment('2021-12-28', 'YYYY-MM-DD').format('DD/MM/YYYY'),
+    title: 'Peaking into the game engine',
+    blurb: 'Learning the fundamentals and basic usage of Unreal Engine 4',
+    img: { src: '/images/dev-log/dev-log-2.png', alt: 'Dev Log 2 Image' },
+    content: `
+      <p>
+        I felt that getting started on something was probably the hardest when doing something. Even with the learning material available in front of me I was a bit lost on where to go, so after my first post 
+        it took me a bit of time to actually get started on the course material. Another factor that delayed it further was the fact that it was christmas break, which meant I became lazier and was spending 
+        most of my time playing games rather than spending that precious spare time on learning or developing.
+      </p>
+      <p>
+        Once I got started, the first two chapters of the course material was pretty simple as I was able to recall most of the content which I did previously a few months ago. 
+        When I reached the chapter for creating a building escape game, this time I tried to pay more attention in understanding the way how functionalities are added rather than just 
+        copying what the instructor was writing.
+      </p>
+      <p>In the beginning of the chapter, it shows how to create an area with geometric shapes for early level design purposes, apply materials to those shapes and create actors in the scene.</p>
+      <p>
+        One thing I realised why it was very hard for beginners to step into developing games in UE4 was that the documentation itself wasn't that beginner friendly. 
+        It required the developer to know some of the terminologies used the engine, for example when trying to rotate an object using the engine interface, you would be changing the X, Y and Z rotation values, 
+        however when accessing the rotation properties in code, they weren't labelled as X,Y and Z but rather Roll, Pitch and Yaw.
+      </p>
+      <img src="/images/dev-log/ue4-rotation-system.png" alt="UE4 Rotation System" />
+      <p>
+        Using the rotation values, we then were able to create an automatic rotation system using a Trigger Volume and attach the component to a door. 
+        This allowed for any specified actor (Player Start in our case) to be able to open the door to a certain angle and when not overlapping with the Trigger Volume, 
+        the door will automatically close (go back to the initial rotation angle) but to prevent the player from escaping without any difficulty, we changed the values so that the door closes just in time.
+      </p>
+      <p>
+        To complicate the door opening mechanic further, we changed the door trigger from a specifc actor to a mass value. This introduced the mechanic of having multiple ways of how a player could potentially open the door, 
+        but there was one issue. At the current state, the only way for the player to open the door was to push the movable actors into the Trigger Volume.
+      </p>
+      <p>
+        The course then teaches on how to add a Grabber component to the Player Start (using the Physics Handle component) giving the players the ability to grab actors 
+        in the scene and drop them into the Trigger Volume. 
+        With this we were able to create a small playable game by trapping the player in a room with movable actors that carry a certain mass giving the player an option to open the door and escape the room.
+      </p>
+      <img src="/images/dev-log/ue4-building-escape-starter.png" alt="UE4 Forest Level" />
     `
   },
   {
